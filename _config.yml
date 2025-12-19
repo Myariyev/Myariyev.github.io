@@ -11,3 +11,6 @@ theme: "" # no theme (we use custom CSS)
 
 plugins: []
 
+# GitHub Pages settings
+github: [metadata]
+
