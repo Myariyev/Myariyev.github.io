@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>{{ page.title | default: site.title }}</title>
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -17,11 +17,11 @@
           <span></span>
       </button>
       <ul class="nav-menu" id="nav-menu">
-        <li><a href="{{ site.baseurl }}/" class="nav-link {% if page.url == '/' %}active{% endif %}" data-page="home">Home</a></li>
-        <li><a href="{{ site.baseurl }}/about/" class="nav-link {% if page.url == '/about/' %}active{% endif %}" data-page="about">About</a></li>
-        <li><a href="{{ site.baseurl }}/projects/" class="nav-link {% if page.url == '/projects/' %}active{% endif %}" data-page="projects">Projects</a></li>
-        <li><a href="{{ site.baseurl }}/resume/" class="nav-link {% if page.url == '/resume/' %}active{% endif %}" data-page="resume">Resume</a></li>
-        <li><a href="{{ site.baseurl }}/blog/" class="nav-link {% if page.url == '/blog/' %}active{% endif %}" data-page="blog">Blog</a></li>
+        <li><a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}" data-page="home">Home</a></li>
+        <li><a href="{{ '/about/' | relative_url }}" class="nav-link {% if page.url == '/about/' %}active{% endif %}" data-page="about">About</a></li>
+        <li><a href="{{ '/projects/' | relative_url }}" class="nav-link {% if page.url == '/projects/' %}active{% endif %}" data-page="projects">Projects</a></li>
+        <li><a href="{{ '/resume/' | relative_url }}" class="nav-link {% if page.url == '/resume/' %}active{% endif %}" data-page="resume">Resume</a></li>
+        <li><a href="{{ '/blog/' | relative_url }}" class="nav-link {% if page.url == '/blog/' %}active{% endif %}" data-page="blog">Blog</a></li>
       </ul>
     </div>
   </nav>
@@ -49,7 +49,7 @@
     </div>
   </footer>
 
-  <script src="{{ site.baseurl }}/assets/js/script.js"></script>
+  <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
 </body>
 </html>
 
