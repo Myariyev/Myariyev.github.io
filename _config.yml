@@ -7,7 +7,7 @@ url: "https://Myariyev.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
-theme: "" # no theme (we use custom CSS)
+# No theme - we use custom CSS
 
 plugins: []
 
