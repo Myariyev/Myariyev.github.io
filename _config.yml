@@ -1,0 +1,13 @@
+title: Mehdi Yariyev - Portfolio
+email: ''
+description: >
+  Personal portfolio website for Mehdi Yariyev, student at ADA University, robotics enthusiast, and winner of several robogames festivals.
+baseurl: "" # the subpath of your site (empty for user/organization GitHub Pages)
+url: "https://Myariyev.github.io" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+theme: "" # no theme (we use custom CSS)
+
+plugins: []
+

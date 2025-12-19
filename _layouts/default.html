@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ page.title | default: site.title }}</title>
+  <link rel="stylesheet" href="{{ site.baseurl }}/project3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Mehdi</div>
+      <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="{{ site.baseurl }}/" class="nav-link {% if page.url == '/' %}active{% endif %}" data-page="home">Home</a></li>
+        <li><a href="{{ site.baseurl }}/about/" class="nav-link {% if page.url == '/about/' %}active{% endif %}" data-page="about">About</a></li>
+        <li><a href="{{ site.baseurl }}/projects/" class="nav-link {% if page.url == '/projects/' %}active{% endif %}" data-page="projects">Projects</a></li>
+        <li><a href="{{ site.baseurl }}/resume/" class="nav-link {% if page.url == '/resume/' %}active{% endif %}" data-page="resume">Resume</a></li>
+        <li><a href="{{ site.baseurl }}/blog/" class="nav-link {% if page.url == '/blog/' %}active{% endif %}" data-page="blog">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="pages-container">
+    {{ content }}
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; {{ site.time | date: '%Y' }} Mehdi Yariyev. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://github.com/Myariyev" target="_blank" class="social-icon" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.codecademy.com/profiles/myariyev25625" target="_blank" class="social-icon codecademy" title="Codecademy">
+          <span class="codecademy-letter">C</span>
+        </a>
+      </div>
+      <p style="margin-top: 15px; font-size: 14px;">
+        <a href="https://github.com/Myariyev/Myariyev.github.io" target="_blank" style="color: rgba(255, 255, 255, 0.8); text-decoration: underline;">
+          View this website's source code on GitHub
+        </a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="{{ site.baseurl }}/project3.js"></script>
+</body>
+</html>
+
