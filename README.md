@@ -36,4 +36,3 @@ This site is hosted on GitHub Pages at: https://Myariyev.github.io
 ## Repository
 
 View the source code: https://github.com/Myariyev/Myariyev.github.io
-
