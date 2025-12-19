@@ -11,6 +11,13 @@ markdown: kramdown
 
 plugins: []
 
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
 # GitHub Pages settings
 github: [metadata]
 
